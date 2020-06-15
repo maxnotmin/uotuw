@@ -66,7 +66,7 @@ def move_videos():
     try:
         for file in all_files:
             if file.endswith('.mkv') or file.endswith('.mp4'):
-                tmp_path = os.path.join(test_target, file)
+                tmp_path = os.path.join(target_dir, file)
                 print("FOUND FILE", tmp_path)
                 shutil.move(file, tmp_path)
         return True
