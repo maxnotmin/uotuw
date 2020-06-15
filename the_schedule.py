@@ -9,7 +9,7 @@ import time
 
 
 # HOW TO RUN THESE TASKS
-#
+# celery worker --loglevel=info -A the_schedule --beat
 
 #backend can be DataBase Connetion
 app = Celery('tasks', backend='amqp', broker='amqp://localhost//')
@@ -51,6 +51,7 @@ def check_stream():
 
 @app.task
 def run_stream():
+    # FileGlobLivestream opt/videos dlive -glob "*.mkv" -shuffle -loop
     pass
 
 
