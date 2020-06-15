@@ -9,7 +9,7 @@ import time
 
 
 # HOW TO RUN THESE TASKS
-# 
+#
 
 #backend can be DataBase Connetion
 app = Celery('tasks', backend='amqp', broker='amqp://localhost//')

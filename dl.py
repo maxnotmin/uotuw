@@ -10,16 +10,6 @@ now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 # GET ALL RECENT SHOWS
 
-
-recent_shows = [
-    'https://youtu.be/mTgQuGGTUXQ',
-    'https://youtu.be/qZv5Mw6I6Wk',
-    'https://youtu.be/lSdb_fOsi7U',
-    'https://youtu.be/usIJ_5UEjqU',
-    'https://youtu.be/XJBjrSQm_NI',
-    ''
-]
-
 '''
 def loop_pull_vid(thelist=[]):
 
@@ -31,6 +21,27 @@ def loop_pull_vid(thelist=[]):
         stdout, stderr = process.communicate()
         #print(stdout.decode('utf-8'))
 '''
+
+
+recent_shows = [
+    'https://youtu.be/IabznC5FHrE',
+    'https://youtu.be/WssXojs8RlQ',
+    'https://youtu.be/FpYOuPIpJ5g',
+    'https://youtu.be/puAMTiP-Pc4',
+    'https://youtu.be/l7gmFKstPzs',
+    'https://youtu.be/8Ejarw8eso0',
+    'https://youtu.be/7AsRJi7B7YE',
+    'https://youtu.be/g-Tf3D0BLoY',
+    'https://youtu.be/CLO0P7A85kw',
+    'https://youtu.be/5j1PpImkgr4',
+    'https://youtu.be/IRYOSVEbOq8',
+    'https://youtu.be/EzdbeMTbcGQ',
+    'https://youtu.be/T_RHdpL9hIo',
+    'https://youtu.be/MtW0DQOPBnI'
+
+]
+
+
 
 def loop_pull_vid(thelist=[]):
     """
@@ -66,7 +77,9 @@ def move_videos():
 
 
 
-move_videos()
 
-#loop_pull_vid(thelist=recent_shows)
+
+loop_pull_vid(thelist=recent_shows)
+
+#move_videos()
 
