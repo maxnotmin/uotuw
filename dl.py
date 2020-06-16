@@ -24,20 +24,13 @@ def loop_pull_vid(thelist=[]):
 
 
 recent_shows = [
-    'https://youtu.be/IabznC5FHrE',
-    'https://youtu.be/WssXojs8RlQ',
-    'https://youtu.be/FpYOuPIpJ5g',
-    'https://youtu.be/puAMTiP-Pc4',
+    'https://youtu.be/y2QQ2NoDEBI',
     'https://youtu.be/l7gmFKstPzs',
-    'https://youtu.be/8Ejarw8eso0',
-    'https://youtu.be/7AsRJi7B7YE',
-    'https://youtu.be/g-Tf3D0BLoY',
-    'https://youtu.be/CLO0P7A85kw',
-    'https://youtu.be/5j1PpImkgr4',
     'https://youtu.be/IRYOSVEbOq8',
-    'https://youtu.be/EzdbeMTbcGQ',
-    'https://youtu.be/T_RHdpL9hIo',
-    'https://youtu.be/MtW0DQOPBnI'
+    'https://youtu.be/T0-WyO0PCII',
+    'https://youtu.be/GcZQ2aOjYRs',
+    'https://youtu.be/VGV4gTyJodM',
+    'https://youtu.be/fk9nH1LQlFc'
 
 ]
 
@@ -74,7 +67,13 @@ def move_videos():
         print("Video File Move Error: ", str(e))
 
 
-
+def delete_played_videos():
+    target_dir = '/opt/videos'
+    try:
+        stream = os.popen('rm -r opt/videos/')
+        output = stream.read()
+    except Exception as e:
+        print("Could not Delete All Videos: ", str(e))
 
 
 

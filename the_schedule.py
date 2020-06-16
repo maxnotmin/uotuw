@@ -3,6 +3,8 @@ import schedule
 from celery import Celery
 from celery.schedules import crontab
 import time
+from .dl import loop_pull_vid, move_videos
+from .media_sources import recent_video_shows, recent_podcasts
 
 
 # DIGITAL OCEAN : https://www.digitalocean.com/community/tutorials/how-to-use-celery-with-rabbitmq-to-queue-tasks-on-an-ubuntu-vps
