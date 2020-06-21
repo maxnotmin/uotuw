@@ -1,7 +1,7 @@
 #!/usr/bin/python3.6
 import os, sys, time, datetime, subprocess
 import shutil
-
+import configparser
 
 AB_PATH = os.path.abspath(__file__)
 CUR_DIR = os.getcwd()
@@ -34,24 +34,34 @@ recent_shows = [
 
 ]
 
+def parse_vid_list():
+    pass
+
 
 
 def loop_pull_vid(thelist=[]):
     """
-    """
+    Loop through a list and download the YouTube Video
 
+    :return boolean
+    """
 
     for vid in thelist:
         try:
             #python /usr/local/bin/youtube-dl
             stream = os.popen('python /usr/local/bin/youtube-dl {url}'.format(url=vid))
             output = stream.read()
+            return True
         except Exception as e:
             print("Could not download video: ", str(e))
+            return False
 
 
-def move_videos():
-    target_dir = '/opt/videos'
+def move_videos(target_dir='/opt/videos'):
+    """
+    Move the downloaded videos to target folder
+    :return: boolean
+    """
     cur_dir = CUR_DIR
     all_files = os.listdir(cur_dir)
     print("ALL FILES: ", all_files)
@@ -65,15 +75,22 @@ def move_videos():
         return True
     except Exception as e:
         print("Video File Move Error: ", str(e))
+        return False
 
 
-def delete_played_videos():
+def delete_played_videos(target_dir='opt/videos/'):
+    """
+    Remove all downloaded videos from target directory
+    :return: boolean
+    """
     target_dir = '/opt/videos'
     try:
-        stream = os.popen('rm -r opt/videos/')
+        stream = os.popen('rm -r {the_dir}'.format(the_dir=target_dir))
         output = stream.read()
+        return True
     except Exception as e:
         print("Could not Delete All Videos: ", str(e))
+        return False
 
 
 
