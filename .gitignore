@@ -5,6 +5,12 @@ __pycache__/
 
 *.ini
 
+#IGNORE YAML CONFIGS
+vid_config.yaml
+pod_config.yaml
+
+*.yml
+
 # C extensions
 *.so
 
