@@ -10,34 +10,26 @@ CUR_DIR = os.getcwd()
 timestr = time.strftime("%Y%m%d-%H%M%S")
 now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-# GET ALL RECENT SHOWS
 
-'''
-def loop_pull_vid(thelist=[]):
-
-
-    for vid in thelist:
-        #python /usr/local/bin/youtube-dl
-        process = subprocess.Popen(['python /usr/local/bin/youtube-dl', '{url}'.format(url=vid)],
-                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        stdout, stderr = process.communicate()
-        #print(stdout.decode('utf-8'))
-'''
-
-
-recent_shows = [
-    'https://youtu.be/y2QQ2NoDEBI',
-    'https://youtu.be/l7gmFKstPzs',
-    'https://youtu.be/IRYOSVEbOq8',
-    'https://youtu.be/T0-WyO0PCII',
-    'https://youtu.be/GcZQ2aOjYRs',
-    'https://youtu.be/VGV4gTyJodM',
-    'https://youtu.be/fk9nH1LQlFc'
-
-]
-
-def parse_vid_list():
-    pass
+def load_yaml_list(target_yaml='vid_config.yaml', the_key='vid_list'):
+    """
+    This will loaded the URLs form a YAML to get all the most recent shows
+    :param target_yaml:
+    :return: List
+    """
+    try:
+        with open(target_yaml) as stream:
+            the_yaml = yaml.safe_load(stream)
+            print("try Load Yaml: ", the_yaml[the_key])
+            the_list = the_yaml[the_key]
+            if type(the_list) is list:
+                return the_list
+            else:
+                print("List not loaded. Returning empty list")
+                return ['']
+    except yaml.YAMLError as e:
+        print("ERROR Loading Yaml: ", str(e))
+        return False
 
 
 
@@ -97,7 +89,9 @@ def delete_played_videos(target_dir='opt/videos/'):
 
 
 
-loop_pull_vid(thelist=recent_shows)
+load_yaml_list()
+
+#loop_pull_vid(thelist=recent_shows)
 
 #move_videos()
 

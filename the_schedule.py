@@ -9,6 +9,8 @@ from .media_sources import recent_video_shows, recent_podcasts
 
 # DIGITAL OCEAN : https://www.digitalocean.com/community/tutorials/how-to-use-celery-with-rabbitmq-to-queue-tasks-on-an-ubuntu-vps
 
+AB_PATH = os.path.abspath(__file__)
+CUR_DIR = os.getcwd()
 
 # HOW TO RUN THESE TASKS
 # celery worker --loglevel=info -A the_schedule --beat
