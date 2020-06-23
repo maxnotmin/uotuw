@@ -8,7 +8,7 @@ __pycache__/
 #IGNORE YAML CONFIGS
 vid_config.yaml
 pod_config.yaml
-
+testing_data.py
 *.yml
 
 # C extensions
