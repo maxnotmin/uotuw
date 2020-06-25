@@ -89,9 +89,4 @@ def delete_played_videos(target_dir='opt/videos/'):
 
 
 
-load_yaml_list()
-
-#loop_pull_vid(thelist=recent_shows)
-
-#move_videos()
 

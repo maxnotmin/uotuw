@@ -40,7 +40,7 @@ def get_vid_url(the_pattern='', the_str=''):
     try:
         find_url = re.search(pattern=the_pattern, string=the_str)
         if find_url:
-            print("the VID URL: ", find_url.group())
+            #print("the VID URL: ", find_url.group())
             return find_url.group()
         else:
             print("No Embend Video URL")
@@ -50,25 +50,38 @@ def get_vid_url(the_pattern='', the_str=''):
 
 
 def loop_feed(theobj=[]):
+    """
+    Loop over the LOAD RSS Feed from BrokenSim. Should return like 12 posts
+    :param theobj:
+    :return: list[dict]
+    """
     MASTER_LIST = []
 
-    for show in theobj[1:3]:
+    for show in theobj:
         tmp_obj = {
             'name': show['title'],
             'summary': show['summary'],
-            'url': get_vid_url(the_pattern=REGEX_PATTERN, the_str=show['content'][0]['value'])
+            'url': get_vid_url(the_pattern=REGEX_PATTERN, the_str=show['content'][0]['value']),
+            'art':
         }
-        print("#### SHOW #### :", show)
         MASTER_LIST.append(tmp_obj)
 
-    print("MASTER LIST: ", str(MASTER_LIST))
     return MASTER_LIST
 
 
+def make_dl_list(list_obj=[]):
+    """
+    This returns a list of URL from the RSS Feed
+    :param list_obj: list[obj]
+    :return: list
+    """
+    MASTER_LIST = []
+    for obj in list_obj:
+        tmp_url = obj['url']
+        MASTER_LIST.append(tmp_url)
+    return MASTER_LIST
 
-test = load_feed()
 
-test_loop = loop_feed(theobj=test)
 
 
 
