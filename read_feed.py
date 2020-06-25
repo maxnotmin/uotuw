@@ -61,8 +61,7 @@ def loop_feed(theobj=[]):
         tmp_obj = {
             'name': show['title'],
             'summary': show['summary'],
-            'url': get_vid_url(the_pattern=REGEX_PATTERN, the_str=show['content'][0]['value']),
-            'art':
+            'url': get_vid_url(the_pattern=REGEX_PATTERN, the_str=show['content'][0]['value'])
         }
         MASTER_LIST.append(tmp_obj)
 

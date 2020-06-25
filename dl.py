@@ -1,7 +1,6 @@
 #!/usr/bin/python3.6
 import os, sys, time, datetime, subprocess
 import shutil
-import configparser
 import yaml
 
 
@@ -51,7 +50,7 @@ def loop_pull_vid(thelist=[]):
             return False
 
 
-def move_videos(target_dir='/opt/videos'):
+def move_videos(target_dir='videos'):
     """
     Move the downloaded videos to target folder
     :return: boolean
@@ -72,15 +71,17 @@ def move_videos(target_dir='/opt/videos'):
         return False
 
 
-def delete_played_videos(target_dir='opt/videos/'):
+def delete_played_videos(target_dir='videos'):
     """
     Remove all downloaded videos from target directory
     :return: boolean
     """
-    target_dir = '/opt/videos'
+
     try:
-        stream = os.popen('rm -r {the_dir}'.format(the_dir=target_dir))
-        output = stream.read()
+        for file in os.listdir(target_dir):
+            if file.endswith('.mkv') or file.endswith('.mp4'):
+                stream = os.popen('rm {vid_file}'.format(vid_file=file))
+                output = stream.read()
         return True
     except Exception as e:
         print("Could not Delete All Videos: ", str(e))
