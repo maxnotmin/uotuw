@@ -38,17 +38,12 @@ def loop_pull_vid(thelist=[]):
 
     :return boolean
     """
-
     for vid in thelist:
-        try:
-            #python /usr/local/bin/youtube-dl
-            stream = os.popen('python /usr/local/bin/youtube-dl {url}'.format(url=vid))
-            print("Downlaoded: ", str(vid))
-            output = stream.read()
-            return True
-        except Exception as e:
-            print("Could not download video: ", str(e))
-            return False
+        #python /usr/local/bin/youtube-dl
+        stream = os.popen('python /usr/local/bin/youtube-dl {url}'.format(url=vid))
+        print("Downlaoded: ", str(vid))
+        output = stream.read()
+
 
 
 def move_videos(target_dir='videos'):
@@ -58,7 +53,6 @@ def move_videos(target_dir='videos'):
     """
     cur_dir = CUR_DIR
     all_files = os.listdir(cur_dir)
-    print("ALL FILES: ", all_files)
     #MOVE FILE LOOP
     try:
         for file in all_files:
