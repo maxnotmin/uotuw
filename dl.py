@@ -43,6 +43,7 @@ def loop_pull_vid(thelist=[]):
         try:
             #python /usr/local/bin/youtube-dl
             stream = os.popen('python /usr/local/bin/youtube-dl {url}'.format(url=vid))
+            print("Downlaoded: ", str(vid))
             output = stream.read()
             return True
         except Exception as e:

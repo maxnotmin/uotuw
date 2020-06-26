@@ -21,6 +21,7 @@ def load_feed(the_feed=BROKENSIM):
         ssl._create_default_https_context = ssl._create_unverified_context
     broken = feedparser.parse(the_feed)
     ent = broken['entries']
+    print("FEED LOADED")
     return ent
 
 REGEX_PATTERN = r'(?<=src=")(.*)(?=\?feature)'
@@ -39,7 +40,7 @@ def get_vid_url(the_pattern='', the_str=''):
     try:
         find_url = re.search(pattern=the_pattern, string=the_str)
         if find_url:
-            #print("the VID URL: ", find_url.group())
+            print("the VID URL: ", find_url.group())
             return find_url.group()
         else:
             print("No Embend Video URL")
@@ -63,7 +64,7 @@ def loop_feed(theobj=[]):
             'url': get_vid_url(the_pattern=REGEX_PATTERN, the_str=show['content'][0]['value'])
         }
         MASTER_LIST.append(tmp_obj)
-
+    print("MASTER LIST OF OBJS")
     return MASTER_LIST
 
 
@@ -77,6 +78,7 @@ def make_dl_list(list_obj=[]):
     for obj in list_obj:
         tmp_url = obj['url']
         MASTER_LIST.append(tmp_url)
+    print("LIST OF URLS", str(MASTER_LIST))
     return MASTER_LIST
 
 
