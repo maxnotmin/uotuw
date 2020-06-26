@@ -1,5 +1,4 @@
 import os, sys
-import schedule
 import feedparser
 import time
 import ssl
