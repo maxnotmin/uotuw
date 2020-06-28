@@ -5,6 +5,7 @@ import time
 from dl import loop_pull_vid, move_videos
 from media_sources import recent_video_shows, recent_podcasts
 from random import randint
+import logging
 
 
 
@@ -86,6 +87,9 @@ def make_dir():
 
 
 
+
+
+
 @app.on_after_configure.connect
 def setup_periodic_tasks(sender, **kwargs):
     print("STARTING CONFING IT's READING")
@@ -100,3 +104,4 @@ def setup_periodic_tasks(sender, **kwargs):
     )
 
 
+app.start()
