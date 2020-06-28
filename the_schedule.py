@@ -10,6 +10,10 @@ from media_sources import recent_video_shows, recent_podcasts
 
 # DIGITAL OCEAN : https://www.digitalocean.com/community/tutorials/how-to-use-celery-with-rabbitmq-to-queue-tasks-on-an-ubuntu-vps
 
+# RUN with Supervior
+# Get PID: ps -ef | grep supervisord
+# Kill: kill -s SIGTERM <PID>
+
 AB_PATH = os.path.abspath(__file__)
 CUR_DIR = os.getcwd()
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a2e9a2-d983-4500-adcb-72dc4fe5110f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/the_schedule.py" afterPath="$PROJECT_DIR$/the_schedule.py" />
     </list>
@@ -25,14 +26,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="the_schedule.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="the_schedule.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/the_schedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.081907">
-              <caret line="72" column="67" selection-start-line="72" selection-start-column="67" selection-end-line="72" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="supervisord.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/supervisord.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.037926674">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,12 +112,14 @@
         <option value="$PROJECT_DIR$/vid_config.yaml" />
         <option value="$PROJECT_DIR$/database.py" />
         <option value="$PROJECT_DIR$/testing_data.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/stream_vids.sh" />
         <option value="$PROJECT_DIR$/def_test.py" />
         <option value="$PROJECT_DIR$/read_feed.py" />
         <option value="$PROJECT_DIR$/dl.py" />
         <option value="$PROJECT_DIR$/the_schedule.py" />
+        <option value="$PROJECT_DIR$/supervisord.conf.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/supervisord.conf" />
       </list>
     </option>
   </component>
@@ -106,8 +129,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="115" />
-    <option name="y" value="33" />
+    <option name="x" value="149" />
+    <option name="y" value="322" />
     <option name="width" value="1740" />
     <option name="height" value="936" />
   </component>
@@ -376,7 +399,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="115" y="33" width="1740" height="936" extended-state="0" />
+    <frame x="149" y="322" width="1740" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -477,6 +500,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -595,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media_sources.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4227941">
@@ -680,11 +697,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/the_schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.081907">
-          <caret line="72" column="67" selection-start-line="72" selection-start-column="67" selection-end-line="72" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supervisord.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037926674">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
