@@ -5,6 +5,7 @@ from celery.schedules import crontab
 import time
 from dl import loop_pull_vid, move_videos
 from media_sources import recent_video_shows, recent_podcasts
+from random import randint
 
 
 
@@ -73,12 +74,23 @@ def print_loc():
     print("CUR DIR: ", str(CUR_DIR))
     return True
 
+def random_with_N_digits(n):
+    range_start = 10**(n-1)
+    range_end = (10**n)-1
+    return randint(range_start, range_end)
+
+@add.task
+def make_dir():
+    num_name = random_with_N_digits(n=4)
+    stream = os.popen('touch {file}.txt'.format(file=num_name))
+
+
 
 @app.on_after_configure.connect
 def setup_periodic_tasks(sender, **kwargs):
     print("STARTING CONFING IT's READING")
     # Calls test('hello') every 10 seconds.
-    sender.add_periodic_task(10.0, print_loc.s, name='PRINT RUN LOC')
+    sender.add_periodic_task(10.0, make_dir.s, name='PRINT RUN LOC')
 
     # Executes every Monday morning at 7:30 a.m.
     sender.add_periodic_task(
