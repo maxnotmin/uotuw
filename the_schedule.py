@@ -6,7 +6,8 @@ from dl import loop_pull_vid, move_videos
 from media_sources import recent_video_shows, recent_podcasts
 from random import randint
 import logging
-
+import datetime
+from datetime import timedelta
 
 
 # DIGITAL OCEAN : https://www.digitalocean.com/community/tutorials/how-to-use-celery-with-rabbitmq-to-queue-tasks-on-an-ubuntu-vps
@@ -43,7 +44,7 @@ app.conf.beat_schedule = {
 
 
 
-@app.task(bind=True)
+@app.task
 def test(string):
     return string[::-1]
 
@@ -68,7 +69,7 @@ def run_stream():
     # FileGlobLivestream opt/videos dlive -glob "*.mkv" -shuffle -loop
     pass
 
-@app.task(bind=True)
+@app.task
 def print_loc():
     mr_ab = str(AB_PATH)
     mr_cur = str(CUR_DIR)
@@ -80,16 +81,24 @@ def random_with_N_digits(n):
     range_end = (10**n)-1
     return randint(range_start, range_end)
 
-@app.task(bind=True)
+@app.task
 def make_dir():
     num_name = random_with_N_digits(n=4)
     stream = os.popen('touch {file}.txt'.format(file=num_name))
 
 
 
+CELERYBEAT_SCHEDULE = {
+    'GET_PATHS': {
+        'task': 'print_loc',
+        'schedule': timedelta(seconds=10),
+    },
+}
 
 
 
+
+"""
 @app.on_after_configure.connect
 def all_tasks(sender, **kwargs):
     print("STARTING CONFING IT's READING")
@@ -105,8 +114,4 @@ def all_tasks(sender, **kwargs):
         crontab(hour=7, minute=30, day_of_week=1),
         test.s('Happy Mondays!'),
     )
-
-
-app.start()
-
-all_tasks()
+"""
