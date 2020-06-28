@@ -90,7 +90,7 @@ def make_dir():
 
 CELERYBEAT_SCHEDULE = {
     'GET_PATHS': {
-        'task': 'print_loc',
+        'task': 'tasks.print_loc',
         'schedule': timedelta(seconds=10),
     },
 }
