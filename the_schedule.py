@@ -91,6 +91,7 @@ def setup_periodic_tasks(sender, **kwargs):
     print("STARTING CONFING IT's READING")
     # Calls test('hello') every 10 seconds.
     sender.add_periodic_task(5.0, print_loc.s, name='PRINT RUN LOC')
+    sender.add_periodic_task(10, test('hello').s, name='test hello')
 
     # Executes every Monday morning at 7:30 a.m.
     sender.add_periodic_task(
