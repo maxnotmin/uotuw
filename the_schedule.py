@@ -78,7 +78,7 @@ def random_with_N_digits(n):
     range_end = (10**n)-1
     return randint(range_start, range_end)
 
-@add.task
+@app.task
 def make_dir():
     num_name = random_with_N_digits(n=4)
     stream = os.popen('touch {file}.txt'.format(file=num_name))
