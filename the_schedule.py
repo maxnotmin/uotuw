@@ -69,9 +69,10 @@ def run_stream():
 
 @app.task
 def print_loc():
-    print("AB PATH: ", str(AB_PATH))
-    print("CUR DIR: ", str(CUR_DIR))
-    return True
+    mr_ab = str(AB_PATH)
+    mr_cur = str(CUR_DIR)
+    fin_str = "AB: {the_ab} | CUR: {the_cur}".format(the_ab=mr_ab, the_cur=mr)
+    return fin_str
 
 def random_with_N_digits(n):
     range_start = 10**(n-1)
