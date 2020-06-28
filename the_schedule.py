@@ -43,7 +43,7 @@ app.conf.beat_schedule = {
 
 
 
-@app.task
+@app.task(bind=True)
 def test(string):
     return string[::-1]
 
@@ -68,7 +68,7 @@ def run_stream():
     # FileGlobLivestream opt/videos dlive -glob "*.mkv" -shuffle -loop
     pass
 
-@app.task
+@app.task(bind=True)
 def print_loc():
     mr_ab = str(AB_PATH)
     mr_cur = str(CUR_DIR)
@@ -80,7 +80,7 @@ def random_with_N_digits(n):
     range_end = (10**n)-1
     return randint(range_start, range_end)
 
-@app.task
+@app.task(bind=True)
 def make_dir():
     num_name = random_with_N_digits(n=4)
     stream = os.popen('touch {file}.txt'.format(file=num_name))
@@ -96,6 +96,9 @@ def setup_periodic_tasks(sender, **kwargs):
     # Calls test('hello') every 10 seconds.
     sender.add_periodic_task(5.0, print_loc.s, name='PRINT RUN LOC')
     sender.add_periodic_task(10, test('hello').s, name='test hello')
+    logging.info(msg="CUR DIR: {}".format(CUR_DIR))
+    logging.info(msg="AB DIR: {}".format(AB_PATH))
+    
 
     # Executes every Monday morning at 7:30 a.m.
     sender.add_periodic_task(
