@@ -108,3 +108,5 @@ def all_tasks(sender, **kwargs):
 
 
 app.start()
+
+all_tasks()
