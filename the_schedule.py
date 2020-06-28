@@ -14,6 +14,10 @@ from media_sources import recent_video_shows, recent_podcasts
 # Get PID: ps -ef | grep supervisord
 # Kill: kill -s SIGTERM <PID>
 
+
+# USING python SuperVisor: https://medium.com/@MicroPyramid/celery-with-supervisor-12522ec397ed
+
+
 AB_PATH = os.path.abspath(__file__)
 CUR_DIR = os.getcwd()
 
