@@ -89,8 +89,8 @@
       <file leaf-file-name="test_fileglob.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_fileglob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.073529415">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.09191176">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -822,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_fileglob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.073529415">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.09191176">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
 import os, sys
 
 def steam_it():
-    stream = os.popen('sh stream_vis.sh')
+    stream = os.popen('sh stream_vids.sh')
     output = stream.read()
     return True
 
