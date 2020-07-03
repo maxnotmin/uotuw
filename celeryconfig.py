@@ -7,7 +7,10 @@ BROKER_URL = 'amqp://'
 from datetime import timedelta
 
 
-# RUN: celery worker -l info --beat
+# RUN: celery worker -l info --beat --detach
+#Kill Process:>
+#>  ps aux|grep 'celery woker'
+#> sudo kill -9 <process id>
 
 CELERYBEAT_SCHEDULE = {
     'test detacted': {
