@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a2e9a2-d983-4500-adcb-72dc4fe5110f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stream_vids.sh" afterPath="$PROJECT_DIR$/stream_vids.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_fileglob.py" afterPath="$PROJECT_DIR$/test_fileglob.py" />
     </list>
     <ignored path="uotuw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_fileglob.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_fileglob.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_fileglob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.073529415">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -116,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stream_vids.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stream_vids.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stream_vids.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05703422">
-              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+            <state vertical-scroll-proportion="-1.6666666">
+              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -158,8 +158,8 @@
         <option value="$PROJECT_DIR$/tasks.py" />
         <option value="$PROJECT_DIR$/celeryconfig.py" />
         <option value="$PROJECT_DIR$/pylivestream.ini" />
-        <option value="$PROJECT_DIR$/test_fileglob.py" />
         <option value="$PROJECT_DIR$/stream_vids.sh" />
+        <option value="$PROJECT_DIR$/test_fileglob.py" />
       </list>
     </option>
   </component>
@@ -812,18 +812,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_fileglob.py">
+    <entry file="file://$PROJECT_DIR$/stream_vids.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stream_vids.sh">
+    <entry file="file://$PROJECT_DIR$/test_fileglob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05703422">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.073529415">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>
