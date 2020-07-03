@@ -1,6 +1,6 @@
 import os, sys
 import time
-from dl import loop_pull_vid, move_videos, delete_played_videos
+from dl import loop_pull_vid, move_videos, delete_played_videos, stream_it
 from media_sources import recent_video_shows, recent_podcasts
 from read_feed import load_feed, get_vid_url, REGEX_PATTERN, BROKENSIM, loop_feed, make_dl_list
 
@@ -26,4 +26,7 @@ if __name__ == "__main__":
     move_videos(target_dir='videos')
 
     # END
-    print("END TESTING")
+    print("stream it")
+
+    stream_it()
+    

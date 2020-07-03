@@ -84,6 +84,15 @@ def delete_played_videos(target_dir='videos'):
         return False
 
 
+def stream_it():
+    try:
+        stream = os.popen('sh stream_vids.sh')
+        print("STREAMING :")
+        return True
+    except Exception as e:
+        print("FileGlob ERROR: ", str(e))
+
+
 
 
 
