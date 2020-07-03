@@ -7,8 +7,8 @@ BROKER_URL = 'amqp://'
 from datetime import timedelta
 
 CELERYBEAT_SCHEDULE = {
-    'doctor-every-10-seconds': {
-        'task': 'tasks.print_loc',
+    'test detacted': {
+        'task': 'tasks.make_dir',
         'schedule': timedelta(seconds=10),
     },
 }
