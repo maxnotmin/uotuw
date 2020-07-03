@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40a2e9a2-d983-4500-adcb-72dc4fe5110f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stream_vids.sh" afterPath="$PROJECT_DIR$/stream_vids.sh" />
-    </list>
+    <list default="true" id="40a2e9a2-d983-4500-adcb-72dc4fe5110f" name="Default" comment="" />
     <ignored path="uotuw.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -58,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pylivestream.ini" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pylivestream.ini" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pylivestream.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.5514706">
+              <caret line="49" column="124" selection-start-line="49" selection-start-column="124" selection-end-line="49" selection-end-column="124" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stream_vids.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stream_vids.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stream_vids.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.076045625">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            <state vertical-scroll-proportion="-2.2222223">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -107,11 +105,11 @@
         <option value="$PROJECT_DIR$/the_schedule.py" />
         <option value="$PROJECT_DIR$/tasks.py" />
         <option value="$PROJECT_DIR$/celeryconfig.py" />
-        <option value="$PROJECT_DIR$/pylivestream.ini" />
         <option value="$PROJECT_DIR$/test_fileglob.py" />
         <option value="$PROJECT_DIR$/dl.py" />
         <option value="$PROJECT_DIR$/def_test.py" />
         <option value="$PROJECT_DIR$/stream_vids.sh" />
+        <option value="$PROJECT_DIR$/pylivestream.ini" />
       </list>
     </option>
   </component>
@@ -716,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pylivestream.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/podcasts/putpodcastshere.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -778,8 +768,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stream_vids.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.076045625">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        <state vertical-scroll-proportion="-2.2222223">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylivestream.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5514706">
+          <caret line="49" column="124" selection-start-line="49" selection-start-column="124" selection-end-line="49" selection-end-column="124" />
           <folding />
         </state>
       </provider>
