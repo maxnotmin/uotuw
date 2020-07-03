@@ -1,9 +1,12 @@
 import os, sys
 
-def steam_it():
-    stream = os.popen('sh stream_vids.sh')
-    output = stream.read()
-    return True
+def stream_it():
+    try:
+        stream = os.popen('sh stream_vids.sh')
+        print("STREAMING :")
+        return True
+    except Exception as e:
+        print("FileGlob ERROR: ", str(e))
 
 
-steam_it()
+stream_it()
