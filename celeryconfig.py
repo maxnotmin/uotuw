@@ -6,6 +6,9 @@ BROKER_URL = 'amqp://'
 
 from datetime import timedelta
 
+
+# RUN: celery worker -l info --beat
+
 CELERYBEAT_SCHEDULE = {
     'test detacted': {
         'task': 'tasks.make_dir',
